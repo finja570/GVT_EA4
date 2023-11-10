@@ -1,0 +1,63 @@
+.header { 
+    grid-area: header; 
+    font-size: 30px;
+}
+.canvasPF1 { 
+    grid-area: funnel; 
+}
+.canvasPF2 { 
+    grid-area: fish; 
+}
+.canvasPF3 { 
+    grid-area: ownPara; 
+}
+.linkPF1 { 
+    grid-area: link1; 
+    font-size: 25px;
+}
+.linkPF2 { 
+    grid-area: link2; 
+    font-size: 25px;
+}
+.textPF3 { 
+    grid-area: text1; 
+    font-size: 25px;
+}
+.discription { 
+    grid-area: formel; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'funnel fish ownPara'
+        'link1 link2 text1'
+        'x x formel';
+    gap: 10px;
+    padding: 5px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#text{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+#formel{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 25px;
+  }
